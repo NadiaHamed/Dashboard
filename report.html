@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<h2 style="color:green;">
+		GeeksForGeeks
+	</h2>
+
+	<script>
+		var employees = [
+		{
+			"emp_id":101,
+			"empname":"Ram",
+			"salary":60000,
+			"address" :
+			{
+				"street-no":20,
+				"plot-no":121,
+				"city":"pune",
+				"contact" :
+				{
+					"landline" : 2292099,
+					"mobile" : 8907632178
+				}
+			}
+		},
+		{
+			"emp_id":102,
+			"empname":"Shyam",
+			"salary":50000,
+			"address" :
+			{
+				"street-no":12,
+				"plot-no":221,
+				"city":"pune"
+			}
+		},
+		{
+			"emp_id":103,
+			"empname":"Lakhan",
+			"salary":40000,
+			"address" :
+			{
+				"street-no":11,
+				"plot-no":432,
+				"city":"pune"
+			}
+		},
+		{
+			"emp_id":104,
+			"empname":"Snigdha",
+			"salary":60000,
+			"address" :
+			{
+				"street-no":21,
+				"plot-no":222,
+				"city":"pune"
+			}
+		}]
+        for (let i = 0; i < employees.length; i++) {
+ 	document.write("<b>" + "Employee Id : "
+			+ "</b>" + employees[i].emp_id + "<br>");
+
+		document.write("<b>" + "Employee Name : "
+			+ "</b>" + employees[i].empname + "<br>");
+
+		document.write("<b>" + "Employee Salary : "
+			+ "</b>" + employees[i].salary + "<br>");
+
+		document.write("<b>" + "Address -> "
+			+ "Street Number : " + "</b>" +
+			employees[i].address["street-no"]);}
+	</script>
+</body>
+
+</html>
