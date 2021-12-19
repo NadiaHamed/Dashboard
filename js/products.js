@@ -56,5 +56,28 @@ const products = [
     status: "Free Shopping",
   },
 ];
+//map function 
+//call card container 
+//map for products 
+// 
 
 
+document.getElementById('hi').innerHTML = products.map(products => 
+  ` <div class="d-flex justify-content-center row">
+  <div class="col-md-10" >
+  </div><div class="row p-2 bg-white border rounded">
+  <div class="col-md-3 mt-1" ><img class="img-fluid img-responsive rounded product-image"   src="${products.image}"></div>
+ 
+    <div class="col-md-6 mt-1"> <h5>  ${products.name}</h5> 
+    <div class="mt-1 mb-1 spec-1"><span> ${products.description}</span></div> 
+    </div>
+    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+    <div class="d-flex flex-row align-items-center">
+        <h4 class="mr-1">${products.price}SAR</h4> 
+    </div>
+    <h6 class="text-success"> ${products.status}</h6>
+    <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm" type="button">Details</button><button class="btn btn-outline-primary btn-sm mt-2" type="button">Add to wishlist</button></div>                           
+  </div>  </div>
+  </div> <br>`
+).join('')
+ 
